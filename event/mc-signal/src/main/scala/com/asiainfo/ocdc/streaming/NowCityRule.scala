@@ -13,7 +13,7 @@ class NowCityRule extends MCLabelRule{
     val nowcityid = largeCellAnalysis(lac, ci)
     val propMap = scala.collection.mutable.Map[String, String]()
     //onsiteList.foreach(location => propMap += (location -> "true"))
-    mcSourceObj.setLabel(Constant.lABEL_NOW_CITY, scala.collection.mutable.Map(nowcityid -> "true"))
+    mcSourceObj.setLabel(Constant.lABEL_NOW_CITY, scala.collection.mutable.Map("code" ->nowcityid))
     println(" set nowcityid label !!! ")
     propMap.iterator.foreach(x => {
       println(" nowcityid : " + x._1 + " flag : " + x._2)
