@@ -14,9 +14,9 @@ class NowCityRule extends MCLabelRule{
     val propMap = scala.collection.mutable.Map[String, String]()
     //onsiteList.foreach(location => propMap += (location -> "true"))
     mcSourceObj.setLabel(Constant.lABEL_NOW_CITY, scala.collection.mutable.Map(nowcityid -> "true"))
-    println(" set site label !!! ")
+    println(" set nowcityid label !!! ")
     propMap.iterator.foreach(x => {
-      println(" area : " + x._1 + " flag : " + x._2)
+      println(" nowcityid : " + x._1 + " flag : " + x._2)
     })
     cache
   }
