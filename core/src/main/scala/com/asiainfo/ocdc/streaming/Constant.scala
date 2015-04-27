@@ -13,6 +13,12 @@ object Constant {
   val LABEL_ONSITE = "onsite"
   // 持续停留标签
   val LABEL_STAY = "stay"
+  //  当前所在地市
+  val lABEL_NOW_CITY = "nowcity"
+  //  客户开户地市
+  val lABEL_CITY = "city"
+  //  客户开户区县
+  val lABEL_COUNTY = "county"
 
   /**------------------- 标签属性 -----------------------*/
   /** ＝＝＝＝连续停留标签属性＝＝＝＝ */
